@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+<h1>Data Types</h1>
+
+<h1>Pass by value VS Pass by reference</h1>
+<p>The terms "pass by value" and "pass by reference" are used to describe how variables are passed on.</p>
+<p><i>The purpose of this website is to describe the differences between these two concepts.</i></p>
+
+<h5>What does 'pass by value' means?</h5>
+<p>Pass by value means that the value of the function parameter is copied into another location of your memory, and when accessing or modifying the variable within your function, only the copy is accessed/modified and the original value is left untouched. Passing by value is how our values are passed on most of the time.</p>
+
+<h5>What does 'pass by reference' means?</h5>
+<p>Passing by reference means that the memory address of the variable (a pointer to the memory location) is passed to the function. This is unlike passing by value, where the value of the variable is passed on.</p>
+
+<ul>
+    {% for dt in data_types %}
+    <li>{{ dt["name"] }} - {{ dt["summary"] }}</li>
+
+    {% endfor %}
+</ul>
+{% endblock content %}

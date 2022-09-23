@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+    <h1>Data Types</h1>
+    
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Pass by value</th>           
+            <th scope="col">Pass by reference</th>        
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Strings</td>
+            <!-- <td>We always use 'pass by value' when we pass arguments ('parameters') to a function or method.</td> -->
+            <td>Objects</td>
+            <!-- <td>'Pass by reference' means that the argument you're passing to the function is a reference to a variable that already exists in memory rather than an independent copy of that variable.</td> -->
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Numbers</td>          
+            <td>Arrays</td> 
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Null</td>
+            <td>Functions</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Undefined</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Boolean</td>
+          </tr>
+        </tbody>
+    </table>
+{% endblock content %}

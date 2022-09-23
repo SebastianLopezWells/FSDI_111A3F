@@ -1,0 +1,15 @@
+div.content{
+    margin: 30px;
+}
+
+.navbar.navbar-expand-lg{
+    background-color: rgb(168, 255, 141);
+}
+
+
+.table td{
+    border-right: solid #dedede 2px;
+    border-left: solid #dedede 2px;
+    border-bottom: solid #dedede 2px;
+
+}

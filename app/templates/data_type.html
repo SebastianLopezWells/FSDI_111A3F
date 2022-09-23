@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    {{ data_type["name"] }}
+
+{% endblock title %}
+
+
+{% block content %}
+
+    <h1>{{ data_type["name"] }}</h1>
+    <small><p>{{ data_type["summary"] }}</p></small>
+
+    <p>{{ data_type["description"] }}</p>
+
+{% endblock content %}
